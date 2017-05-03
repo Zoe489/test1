@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     login() {
-      console.log('this.$http', this);
+      console.log('this.$http', this.$http);
       this.$http.get('/api/login/getUser')
       .then((response) => {
         console.log(response);

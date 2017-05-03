@@ -1,16 +1,15 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-// import Vue from 'vue';
-// import App from './App';
-// import router from './router';
+import Vue from 'vue';
+import VueResource from 'vue-resource';
+import App from './App';
+import router from './router';
 
-const Vue = require('vue');
-const App = require('./App');
-const router = require('./router');
+// const Vue = require('vue');
+// const App = require('./App');
+// const router = require('./router');
 
-const VueResource = require('vue-resource');
-
-console.log('执行');
+// const VueResource = require('vue-resource');
 
 Vue.use(VueResource);
 
