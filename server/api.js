@@ -8,6 +8,7 @@ router.post('/api/login/createUser', (req, res) => {
     username: req.body.username,
     password: req.body.password,
   });
+  console.log(req.body.username);
   newUser.save((err) => {
     if (err) {
       res.send(err);
