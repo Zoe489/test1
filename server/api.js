@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post('/api/login/createUser', (req, res) => {
   const newUser = new model.Login({
-    username: req.body.account,
+    username: req.body.username,
     password: req.body.password,
   });
   newUser.save((err) => {

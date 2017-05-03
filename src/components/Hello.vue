@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     login() {
-      this.$http.get('/api/login/getUsername')
+      this.$http.get('/api/login/getUser')
       .then((response) => {
         console.log(response);
         const params = {
