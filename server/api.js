@@ -24,5 +24,8 @@ router.get('/api/login/getUser', (req, res) => {
     } else {
       res.send(data);
     }
+    return '';
   });
 });
+
+module.exports = router;
